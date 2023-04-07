@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:EmployeeAllowanceApp="clr-namespace:EmployeeAllowanceApp.Model"
+             x:Class="EmployeeAllowanceApp.AddAllowances">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+                
+                    <!--<Frame BackgroundColor="Black" Padding="10" CornerRadius="0">-->
+                    <Image Source="hexImage.png" WidthRequest="50" HeightRequest="50" Margin="0, 10,0, 10"  HorizontalOptions="Start" >
+                    </Image>
+                <Label Text="ALLOWANCE APP" VerticalOptions="Center"  HorizontalTextAlignment="Center" Padding="5" TextColor="White"  FontSize="Small" FontAttributes="Bold"/>
+                    <!--</Frame>-->
+                
+            </StackLayout>
+            <StackLayout Padding="15">
+            <Label Text="Allowance Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+                <Picker ItemsSource="{Binding AllowanceNameList}"
+                    SelectedItem="{Binding SelectedAllowance}" x:Name="AllowanceTypes"
+                    ItemDisplayBinding="{Binding allowanceName}">
+                </Picker>
+                
+                <Label Text="Amount" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                <Entry x:Name="amount" Placeholder="Enter Amount" Keyboard="Numeric" PlaceholderColor="Olive" Text="{Binding Amount}"/>
+
+            <Button Text="DONE" TextColor="White" BackgroundColor="Blue" WidthRequest="100" CornerRadius="15" FontAttributes="Bold" Command="{Binding SaveCommand}"></Button>
+            </StackLayout>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox x:Name="SelectAll" Color="Blue"/>
+                    <Label Text="Select All" FontSize="Small" FontAttributes="Bold" TextColor="Black"/>
+                </StackLayout>
+
+                <CollectionView ItemsSource="{Binding PresentEmployeeList, Mode=TwoWay}" SelectionMode="Multiple" AutomationId="PresentEmployeeList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout x:DataType="EmployeeAllowanceApp:PresentEmployee" Orientation="Horizontal">
+                                <CheckBox IsChecked="{Binding IsSelect, Mode=TwoWay}" CheckedChanged="CheckBox_CheckedChanged"></CheckBox>
+                                <Label Text="{Binding employeeName}" Padding="30" TextColor="Black"></Label>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeAllowanceApp.AllowancePage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+
+        <!--<Frame BackgroundColor="Black" Padding="10" CornerRadius="0">-->
+        <Image Source="hexImage.png" WidthRequest="50" HeightRequest="50" Margin="0, 10,0, 10"  HorizontalOptions="Start" >
+        </Image>
+        <Label Text="ALLOWANCE APP" VerticalOptions="Center"  HorizontalTextAlignment="Center" Padding="10" TextColor="White"  FontSize="Small" FontAttributes="Bold"/>
+        <!--</Frame>-->
+    </StackLayout>
+    <StackLayout Padding="2">
+            <Label Text="Select Time: " HorizontalTextAlignment="Start" TextColor="Black" FontAttributes="Bold" FontSize="Small"/>
+            <TimePicker x:Name="TimePicker"  TextColor="White" BackgroundColor="RED" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4" ></TimePicker>
+        </StackLayout>
+        <StackLayout>
+            <ImageButton  Source="AddAllowanceButton.jpg" Clicked="UserLogin">
+            </ImageButton>
+            <Label Text="ADD ALLOWANCE" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" FontSize="20"/>
+        </StackLayout>
+
+    </StackLayout>
+   
+</ContentPage>

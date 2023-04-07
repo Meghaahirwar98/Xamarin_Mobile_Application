@@ -1,0 +1,16 @@
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\bin\Debug\netstandard2.0\EmployeeAllowanceApp.deps.json
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\bin\Debug\netstandard2.0\EmployeeAllowanceApp.dll
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\bin\Debug\netstandard2.0\ref\EmployeeAllowanceApp.dll
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\bin\Debug\netstandard2.0\EmployeeAllowanceApp.pdb
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\EmployeeAllowanceApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\AddAllowances.xaml.g.cs
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\AllowancePage.xaml.g.cs
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\EmployeeAllowanceApp.AssemblyInfoInputs.cache
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\EmployeeAllowanceApp.AssemblyInfo.cs
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\EmployeeAllowanceApp.csproj.CoreCompileInputs.cache
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\XamlC.stamp
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\EmployeeAllowanceApp.dll
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\ref\EmployeeAllowanceApp.dll
+E:\MobileApp's\EmployeeAllowanceApp\EmployeeAllowanceApp\obj\Debug\netstandard2.0\EmployeeAllowanceApp.pdb

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeAllowanceApp.MainPage"
+             Title="Allowance App - Login">
+
+    <StackLayout>
+        <Frame BackgroundColor="DarkBlue" Padding="10" CornerRadius="0">
+            <Label 
+                Text="{Binding Text}" 
+                HorizontalTextAlignment="Start" 
+                FontSize="Small" 
+                TextColor="White" 
+                FontAttributes="Bold" />
+        </Frame>
+
+        <StackLayout Padding="30">
+            <Image 
+                Source="AstoriaLogo.png" 
+                WidthRequest="150">
+            </Image>
+        </StackLayout>
+        
+        <StackLayout Padding="20">
+            <Label 
+                Text="API URL:" 
+                FontAttributes="Bold" 
+                FontSize="Small" 
+                TextColor="Black"/>
+         
+            <Entry 
+                 Text="{Binding UserId}"
+                AutomationId="UserId"
+                Placeholder="USER NAME" 
+                PlaceholderColor="DarkGray" 
+                FontAttributes="Bold" /> <!--x:Name="{Binding UserId}"-->
+            <Entry 
+                Text="{Binding Password}"
+                AutomationId="Password"
+                IsPassword="true" 
+                Placeholder="PASSWORD" 
+                PlaceholderColor="DarkGray" 
+                FontAttributes="Bold" /> <!--x:Name="{Binding Password}"-->
+
+            <Grid>
+                <Label 
+                    Text="Remember Me" 
+                    FontSize="Micro" 
+                    FontAttributes="Bold" 
+                    FontFamily="Latin Wide" 
+                    TextColor="Black"/>
+                <Switch  
+                    IsToggled="False" 
+                    OnColor="Orange" 
+                    ThumbColor="DarkBlue" />
+            </Grid>
+            <StackLayout Padding="2" Margin="0,20,0,0">
+                <Button 
+                    Text="LogIn"  
+                    TextColor="White" 
+                    BackgroundColor="Blue" 
+                    WidthRequest="90" 
+                   Command="{Binding LoginCommand}"
+                    AutomationId="UserLogin"
+                    CornerRadius="15">
+                    
+                    <!--Clicked="UserLogin"-->
+                </Button>
+            </StackLayout>
+            <StackLayout >
+                <Grid Margin="0,140,0,0">
+                    <Label 
+                        Text="Clear App Data:" 
+                        FontSize="Micro" 
+                        FontAttributes="Bold" 
+                        FontFamily="Latin Wide" 
+                        TextColor="Black" 
+                        HorizontalOptions="FillAndExpand" />
+                    <Button 
+                        Text="CLEAR" 
+                        TextColor="White" 
+                        BackgroundColor="Red" 
+                        WidthRequest="100" 
+                        HeightRequest="50" 
+                        CornerRadius="15" 
+                        HorizontalOptions="EndAndExpand" 
+                        Command="{Binding CancelCommand}">
+                    </Button>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+   
+
+</ContentPage>
